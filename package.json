@@ -36,6 +36,8 @@
     "vitest": "^0.25.8",
     "web-vitals": "^3.5.0"
   },
-  "type": "module",
-  "module": "index.ts"
+    "type": "module",
+  "dependencies": {
+    "lucide-svelte": "^0.399.0"
+  }
 }
