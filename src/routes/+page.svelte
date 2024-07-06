@@ -10,7 +10,7 @@
 <section>
 	<div class="hero min-h-screen">
 		<div class="hero-content flex-col md:flex-row-reverse lg:w-2/3 gap-8">
-			<img src="/src/lib/images/portrait.png" class="md:max-w-sm rounded-lg shadow-2xl" />
+			<img src="/images/portrait.png" alt="Matteo von Haxthausen" class="md:max-w-sm rounded-lg shadow-2xl" />
 			<div class="flex flex-col items-start gap-8 py-8">
 				<h3 class="text-xl font-bold">Hi, my name is</h3>
 				<h1 class="text-5xl font-bold">Matteo von Haxthausen</h1>
@@ -45,7 +45,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 		<div class="card bg-base-100 w-72 shadow-xl">
 			<figure>
-				<img src="/src/lib/images/flutter-card.png" alt="Flutter" />
+				<img src="/images/flutter-card.png" alt="Flutter" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
@@ -61,7 +61,7 @@
 		</div>
 		<div class="card bg-base-100 w-72 shadow-xl">
 			<figure>
-				<img src="/src/lib/images/svelte-card.png" alt="Svelte" />
+				<img src="/images/svelte-card.png" alt="Svelte" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
@@ -77,7 +77,7 @@
 		</div>
 		<div class="card bg-base-100 w-72 shadow-xl">
 			<figure>
-				<img src="/src/lib/images/bun-elysia-card.png" alt="Bun + Elysia" />
+				<img src="/images/bun-elysia-card.png" alt="Bun + Elysia" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
@@ -92,7 +92,7 @@
 		</div>
 		<div class="card bg-base-100 w-72 shadow-xl">
 			<figure>
-				<img src="/src/lib/images/react-next-card.png" alt="React + Next.js" />
+				<img src="/images/react-next-card.png" alt="React + Next.js" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
