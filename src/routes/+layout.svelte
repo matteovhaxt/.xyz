@@ -1,7 +1,9 @@
 <script>
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
+	import Header from '$lib/components/Header.svelte';
 	import { webVitals } from '$lib/vitals';
+	import "../app.css";
 
 	/** @type {import('./$types').LayoutServerData} */
 	export let data;
@@ -15,8 +17,6 @@
 	}
 </script>
 
-<div class="app">
-	<main>
-		<slot />
-	</main>
-</div>
+ <main>
+	<slot />
+</main>
