@@ -1,5 +1,5 @@
 <script>
-	import { CircleCheck, Github, Linkedin, Twitter } from 'lucide-svelte';
+	import { ChevronLeft, ChevronRight, CircleCheck, Github, Linkedin, Mail, Twitter } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
 <section>
 	<div class="hero min-h-screen">
 		<div class="hero-content flex-col md:flex-row-reverse lg:w-2/3 gap-8">
-			<img src="/images/portrait.png" alt="Matteo von Haxthausen" class="md:max-w-sm rounded-lg shadow-2xl" />
+			<img src="/images/portrait.png" alt="Matteo von Haxthausen" class="max-w-sm rounded-lg shadow-2xl" />
 			<div class="flex flex-col items-start gap-8 py-8">
 				<h3 class="text-xl font-bold">Hi, my name is</h3>
 				<h1 class="text-5xl font-bold">Matteo von Haxthausen</h1>
@@ -22,7 +22,6 @@
 					products.
 				</p>
 				<div class="flex items-center gap-4">
-					<button class="btn btn-primary">Get Started</button>
 					<div class="flex gap-4">
 						<a href="https://github.com/matteovhaxt">
 							<Github />
@@ -33,6 +32,9 @@
 						<a href="https://www.linkedin.com/in/matteovhaxt/">
 							<Linkedin />
 						</a>
+						<a href="mailto:mail@matteovhaxt.xyz">
+							<Mail />
+						</a>
 					</div>
 				</div>
 			</div>
@@ -40,14 +42,14 @@
 	</div>
 </section>
 
-<section class="min-h-screen flex flex-col items-center gap-8 p-8">
+<section id="skills" class="flex flex-col items-center gap-8 py-32 px-8">
 	<h2 class="text-4xl font-bold">Skills</h2>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-		<div class="card bg-base-100 w-72 shadow-xl">
+		<div class="card bg-base-200 w-72 shadow-xl">
 			<figure>
 				<img src="/images/flutter-card.png" alt="Flutter" />
 			</figure>
-			<div class="card-body">
+			<div class="card-body gap-4">
 				<h2 class="card-title">
 					Flutter
 					<div class="badge badge-secondary">Dart</div>
@@ -59,11 +61,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card bg-base-100 w-72 shadow-xl">
+		<div class="card bg-base-200 w-72 shadow-xl">
 			<figure>
 				<img src="/images/svelte-card.png" alt="Svelte" />
 			</figure>
-			<div class="card-body">
+			<div class="card-body gap-4">
 				<h2 class="card-title">
 					Svelte
 					<div class="badge badge-secondary">Typescript</div>
@@ -75,11 +77,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card bg-base-100 w-72 shadow-xl">
+		<div class="card bg-base-200 w-72 shadow-xl">
 			<figure>
 				<img src="/images/bun-elysia-card.png" alt="Bun + Elysia" />
 			</figure>
-			<div class="card-body">
+			<div class="card-body gap-4">
 				<h2 class="card-title">
 					Bun + Elysia
 					<div class="badge badge-secondary">Typescript</div>
@@ -90,11 +92,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card bg-base-100 w-72 shadow-xl">
+		<div class="card bg-base-200 w-72 shadow-xl">
 			<figure>
 				<img src="/images/react-next-card.png" alt="React + Next.js" />
 			</figure>
-			<div class="card-body">
+			<div class="card-body gap-4">
 				<h2 class="card-title">
 					React + Next
 					<div class="badge badge-secondary">Typescript</div>
@@ -108,7 +110,67 @@
 	</div>
 </section>
 
-<section class="flex flex-col items-center justify-center gap-8 py-16 px-8">
+<section id="open-source" class="flex flex-col items-center gap-8 py-32 px-8">
+	<h2 class="text-4xl font-bold">Open Source</h2>
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+		<div class="card bg-base-200 w-72 shadow-xl">
+			<figure>
+				<img src="/images/flutter-supabase.png" alt="Flutter Supabase" />
+			</figure>
+			<div class="card-body gap-4">
+				<h2 class="card-title justify-between">
+					Flutter Starter
+					<a href="https://github.com/matteovhaxt/flutter_starter" target="_blank"><Github class="h-5 w-5" /></a>
+				</h2>
+				<p>A starter kit for building Flutter apps with Supabase.</p>
+				<div class="card-actions justify-end">
+					<div class="badge badge-outline">Flutter</div>
+					<div class="badge badge-outline">Supabase</div>
+				</div>
+			</div>
+		</div>
+		<div class="card bg-base-200 w-72 shadow-xl">
+			<figure>
+				<img src="/images/svelte-kit.png" alt="Svelte Kit" />
+			</figure>
+			<div class="card-body gap-4">
+				<h2 class="card-title justify-between">
+					Portfolio
+					<a href="https://github.com/matteovhaxt/website" target="_blank"><Github class="h-5 w-5" /></a>
+				</h2>
+				<p>My personal website built with Svelte Kit.</p>
+				<div class="card-actions justify-end">
+					<div class="badge badge-outline">Svelte</div>
+					<div class="badge badge-outline">Svelte Kit</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="posts" class="flex flex-col items-center gap-8 py-32 px-8">
+	<h2 class="text-4xl font-bold">Posts</h2>
+	<div class="grid grid-cols-1 gap-8">
+		<div class="card bg-base-200 w-96 shadow-xl">
+			<figure>
+			  <img
+				src="/images/state-of-llm-integration.png"
+				alt="The Current State of LLM Integration" />
+			</figure>
+			<div class="card-body">
+			  <h2 class="card-title">The Current State of LLM Integration</h2>
+			  <p>A look at the current state of LLM integration and the future of AI.</p>
+			  <div class="card-actions items-center justify-between">
+				<div class="badge badge-outline">Medium</div>
+				<a href="https://medium.com/@matteovhaxt/the-current-state-of-llm-integration-e6e8164e9b73" target="_blank" class="btn btn-outline">Read</a>
+			  </div>
+			</div>
+		  </div>
+	</div>
+</section>
+
+<section id="work" class="flex flex-col items-center justify-center gap-8 py-32 px-8">
 	<h2 class="text-4xl font-bold">Work</h2>
 	<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
 		<li>
@@ -171,7 +233,7 @@
 	</ul>
 </section>
 
-<section class="flex flex-col items-center justify-center gap-8 py-16 px-8">
+<section id="education" class="flex flex-col items-center justify-center gap-8 py-32 px-8">
 	<h2 class="text-4xl font-bold">Education</h2>
 	<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
 		<li>
